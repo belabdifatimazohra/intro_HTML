@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatima Zohra</title>
+  </head>
+  <body>
+    <!-- navbar du site -->
+    <h1>Relative links</h1>
+    <ul>
+      <li>
+        <a href="index.html">about</a>
+      </li>
+      <li>
+        <a href="./pages/movies.html" target="_blank">movies </a>
+        click to movies and get back to index.html using "about"
+      </li>
+      <li>
+        <a href="#contact"> contact </a>
+        click here to go to contact using the #id link
+      </li>
+    </ul>
+    <center>
+      <!-- Table -->
+      <div>
+        <table border="2">
+          <!-- Row -->
+          <tr>
+            <!-- Column -->
+            <th>Tags</th>
+            <th>Descriptions</th>
+          </tr>
+          <tr>
+            <td>Table</td>
+            <td>th,tr, td</td>
+          </tr>
+          <tr>
+            <td>img</td>
+            <td>images</td>
+          </tr>
+          <tr>
+            <td>video</td>
+            <td>video/mp4|WebM|Ogg</td>
+          </tr>
+          <tr>
+            <td>iframe</td>
+            <td>video/embed</td>
+          </tr>
+          <tr>
+            <td>forms</td>
+            <td>input, textarea, button,...</td>
+          </tr>
+        </table>
+      </div>
+
+      <!--image -->
+      <h1>Image using img tag</h1>
+      <img src="./res/cats.jpg" alt="cats" />
+
+      <hr />
+      <!-- Video tag -->
+      <h1>Video from resources using video tag</h1>
+      <video
+        src="res/small.mp4"
+        type="video/mp4"
+        controls
+        width="50%"
+      ></video>
+
+      <!-- iframe tag with embed video from youtube -->
+      <h1>Video from youtube using embed link and iframe tag</h1>
+      <iframe
+        width="50%"
+        height="50%"
+        src="https://www.youtube.com/embed/aoJJz6vOMvA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+      <br />
+      <hr />
+
+      <!-- Contact forms -->
+      <div id="contact">
+        <h1>Contact Forms</h1>
+        <input type="text" placeholder="nom" /><br /><br />
+        <input type="text" placeholder="prenom" /><br /><br />
+        <input type="text" placeholder="email" /><br /><br />
+        <textarea name="message" id="" cols="30" rows="10"></textarea><br />
+        <br />
+        <button>here</button>
+      </div>
+    </center>
+  </body>
+</html>
